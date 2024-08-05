@@ -1,4 +1,4 @@
-
+import java.util.Arrays;
 public class Tasks {
     public static void printThreeWords() {
         System.out.println("Orange");
@@ -17,7 +17,7 @@ public class Tasks {
     }
 
     public static void printColor() {
-        int value = 333 ;
+        int value = 333;
         if (value <= 0) {
             System.out.println("Красный");
         } else if (value > 0 && value <= 100) {
@@ -26,5 +26,67 @@ public class Tasks {
             System.out.println("Зеленый");
         }
     }
-}
 
+    public static void compareNumbers() {
+        int a = 25;
+        int b = 23;
+        if (a >= b) {
+            System.out.println("a >= b");
+        } else
+            System.out.println("a < b");
+    }
+
+    static boolean methodA(int a, int b) {
+        int sum = a + b;
+        if (sum > 10 && sum < 20) return true;
+        else return false;
+    }
+
+    public static void methodC(int a) {
+        if (a < 0) {
+            System.out.println("Число отрицательное.");
+        } else {
+            System.out.println("Число положительное.");
+        }
+    }
+
+    public static boolean methodB(int a) {
+        if (a < 0) {
+            return true;
+        } else return false;
+    }
+
+    public static void methodE(String text, int count) {
+        if (count > 0) {
+            for (int i = 0; i < count; i++) {
+                System.out.println(text);
+            }
+
+        }
+    }
+
+    public static boolean years(int year) {
+        // Проверка, является ли год високосным
+        if (year % 4 == 0) {
+            if (year % 100 == 0) {
+                return year % 400 == 0;
+            } else {
+                return true;
+            }
+        } else {
+            return false;
+        }
+    }
+    public static void invertArray() {
+        int[] arr = {1, 0, 1, 0, 1, 1, 0};
+        System.out.println(Arrays.toString(arr));
+               for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == 1) {
+                arr[i] = 0;
+            } else if (arr[i] == 0) {
+                arr[i] = 1;
+            }
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
