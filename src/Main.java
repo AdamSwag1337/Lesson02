@@ -12,6 +12,8 @@ public class Main {
 //            Tasks.methodE("I learn Java",3);
 //        System.out.println(Tasks.years(2027));
 //            Tasks.invertArray();
-            }
+//            Tasks.pushArray();
+                Tasks.multiplyArray();
+    }
 }
 
