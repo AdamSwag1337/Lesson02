@@ -124,6 +124,16 @@ public class Tasks {
             System.out.println();
         }
     }
+    public static int[] arrValue (int len, int initialValue){
+        int arr[] = new int[len];
+        for (int i = 0; i < arr.length; i++){
+            arr[i] = initialValue;
+            System.out.print(arr[i] + " ");
+        }
+        return arr;
+    }
 }
+
+
 
 
