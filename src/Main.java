@@ -13,7 +13,8 @@ public class Main {
 //        System.out.println(Tasks.years(2027));
 //            Tasks.invertArray();
 //            Tasks.pushArray();
-                Tasks.multiplyArray();
+//                Tasks.multiplyArray();
+                Tasks.arrDiagonal();
     }
 }
 
